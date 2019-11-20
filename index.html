@@ -13,8 +13,9 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
   <style>
     body {
-      padding: 40px 20px 40px 20px;
+      padding: 5vh 5vw 5vh 5vw;
       font-family: 'Open Sans', sans-serif;
+      font-size: calc(1em + 1vw);
     }
 
     #container {
@@ -27,25 +28,29 @@
       text-align: center;
     }
 
+    #logo-container h2 a {
+      text-decoration: underline dotted;
+    }
+
     #logo {
       width: 100%;
-      max-width: 400px;
+      max-width: 500px;
       max-height: 200px;
       object-fit: cover;
     }
 
     h1 {
       font-weight: 400;
-      font-size: calc(18px + 1vw);
+      font-size: 1.6em;
     }
 
     h2 {
       font-weight: 300;
-      font-size: calc(14px + 1vw);
+      font-size: 1.4em;
     }
 
     #icons {
-      margin-top: 40px;
+      margin-top: 10vw;
       text-align: center;
     }
 
@@ -63,7 +68,7 @@
     }
 
     #email {
-      margin-top: 10px;
+      margin-top: 20px;
       text-align: center;
     }
 
@@ -78,7 +83,12 @@
     <div id="logo-container">
       <img src="./ucllh.jpg" id="logo" />
       <h1>exploring the intersection between law and technology</h1>
-      <h2>UCL Legal Hackers is the University College London student chapter of the global Legal Hackers network.</h2>
+      <h2>
+        UCL Legal Hackers is the
+        <a href="https://www.ucl.ac.uk/laws/">University College London</a>
+        student chapter of the
+        <a href="https://legalhackers.org/people/">global Legal Hackers network</a>.
+      </h2>
     </div>
     <div id="icons">
       <a href="https://www.facebook.com/ucllh" title="Facebook">
@@ -100,7 +110,8 @@
   </div>
   <script src="https://unpkg.com/feather-icons"></script>
   <script>
-    feather.replace()
+    const iconSize = `2em`
+    feather.replace({ width: iconSize, height: iconSize })
   </script>
 </body>
 
