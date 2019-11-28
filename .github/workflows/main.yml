@@ -1,0 +1,19 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    name: surge.sh deployment
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install surge and trigger deployment
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - run: npm i -g surge
+    - run: surge ./ --token ${{ secrets.SURGE_TOKEN }}
+      
