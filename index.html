@@ -28,8 +28,19 @@
       text-align: center;
     }
 
-    #logo-container h2 a {
+    #logo-container h2 a,
+    #menu a,
+    #email a {
       text-decoration: underline dotted;
+    }
+
+    #logo-container a:hover,
+    #menu a:hover,
+    #email a:hover,
+    #logo-container a:active,
+    #menu a:active,
+    #email a:active {
+      background-color: #fff2ac;
     }
 
     #logo {
@@ -49,8 +60,15 @@
       font-size: 1.4em;
     }
 
+    #menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+    }
+
     #icons {
-      margin-top: 10vw;
+      margin-top: 5vw;
       text-align: center;
     }
 
@@ -90,12 +108,29 @@
         <a href="https://legalhackers.org/people/">global Legal Hackers network</a>.
       </h2>
     </div>
+    <div id="menu">
+      <div>
+        <a href="https://www.facebook.com/ucllh/events/">upcoming events</a>
+      </div>
+      <div>
+        <a href="https://ucllh.github.io/materials/">past events</a>
+      </div>
+      <div>
+        <a href="https://mailchi.mp/a4907876a27d/ucllh">newsletter</a>
+      </div>
+      <div>
+        <a href="https://m.me/join/AbYwifZ2wgcY2u65">group chat</a>
+      </div>
+    </div>
     <div id="icons">
       <a href="https://www.facebook.com/ucllh" title="Facebook">
         <i data-feather="facebook"></i>
       </a>
       <a href="https://twitter.com/UCLLegalHackers" title="Twitter">
         <i data-feather="twitter"></i>
+      </a>
+      <a href="https://instagram.com/hack_the_law" title="Instagram">
+        <i data-feather="instagram"></i>
       </a>
       <a href="https://www.linkedin.com/company/ucllh" title="LinkedIn">
         <i data-feather="linkedin"></i>
